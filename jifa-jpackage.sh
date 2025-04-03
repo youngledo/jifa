@@ -24,7 +24,7 @@ osName=$(uname -s)
 version="1.0.0"
 
 if [ "${osName}" = "Darwin" ]; then
-  iconPath=package/macOS/launcher.icns
+  iconPath=package/mac/launcher.icns
 else
   iconPath=package/linux/launcher.png
 fi
@@ -35,7 +35,7 @@ echo "Packaging ${name}..."
 jpackage --name "${name}" \
         --vendor "Eclipse" \
         --app-version "${version}" \
-        --description "Eclipse Jifa (abbreviated as Jifa) stands for \"Java Issues Finding Assistant\". Online Analyzer for Heap Dump, GC Log, Thread Dump and JFR File." \
+        --description "Eclipse Jifa (abbreviated as Jifa) stands for 'Java Issues Finding Assistant'. Online Analyzer for Heap Dump, GC Log, Thread Dump and JFR File." \
         --input "${inputPath}" \
         --dest "${destinationPath}" \
         --main-jar jifa.jar \

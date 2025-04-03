@@ -29,6 +29,8 @@ Eclipse Jifa 是一款在线分析工具，支持分析 Java 堆转储、GC 日�
 
 ### 本地运行 Jifa
 
+#### Docker
+
 ```shell
 # 默认服务地址是 http://localhost:8102
 curl -fsSL https://raw.githubusercontent.com/eclipse/jifa/main/jifa.sh | bash
@@ -44,6 +46,16 @@ curl -fsSL https://raw.githubusercontent.com/eclipse/jifa/main/jifa.sh | bash -s
 ```
 
 注：本地环境需要安装 docker
+
+#### jpackage
+
+使用Java 14及以上版本提供的`jpackage`命令打包成二进制安装包，便于在本地使用（单机模式）。请执行以下脚本：
+
+```shell
+
+jifa-jpackage.{sh | bat}
+
+```
 
 ## 相关链接
 

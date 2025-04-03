@@ -29,6 +29,8 @@ Please refer to [GitHub Pages](https://eclipse-jifa.github.io/jifa/) for more in
 
 ### Run Jifa Locally
 
+#### Docker
+
 ```shell
 # Default service address is at http://localhost:8102
 curl -fsSL https://raw.githubusercontent.com/eclipse/jifa/main/jifa.sh | bash
@@ -44,6 +46,16 @@ curl -fsSL https://raw.githubusercontent.com/eclipse/jifa/main/jifa.sh | bash -s
 ```
 
 Note: Please make sure that Docker is installed.
+
+#### jpackage
+
+Use the 'jpackage' command provided by Java 14 and above to package it into a binary installation package for local use (stand-alone mode). Please execute the following script:
+
+```shell
+
+jifa-jpackage.{sh | bat}
+
+```
 
 ## Links
 - [GitHub Pages](https://eclipse-jifa.github.io/jifa/)
